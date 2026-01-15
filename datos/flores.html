@@ -9,13 +9,17 @@
     <title>FLORES</title>
     <style>
         .frase-bonita {
-            color: #E0FFFF;
-            text-shadow: 0 0 10px rgba(224, 255, 255, 0.5);
-            font-family: 'Arial', sans-serif;
-            position: absolute;
-            top: 20px; /* Ajusta según sea necesario */
-            right: 20px; /* Ajusta según sea necesario */
-            width: 200px; /* Ajusta el ancho según sea necesario */
+           position: absolute; /* Para que flote sobre el fondo */
+            top: 60px;          /* Aquí están los PX que pediste. 60px-80px es el punto dulce */
+            left: 50%;          /* Mueve el inicio del texto al centro exacto */
+           transform: translateX(-50%); /* Corrige para que el CENTRO del texto esté en el centro */
+    
+            text-align: center; /* Para que las líneas de texto se centren entre sí */
+            width: 90%;         /* Para que no toque los bordes en pantallas pequeñas */
+            max-width: 800px;   /* Para que no se estire demasiado en pantallas grandes */
+            font-size: 1.5em;   /* Tamaño de fuente legible */
+            font-family: 'Cinzel', serif; /* Fuente legible */
+            color: #E0F7FA;
         }
     </style>
 </head>
